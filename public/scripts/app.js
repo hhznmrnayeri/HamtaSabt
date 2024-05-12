@@ -1,6 +1,6 @@
 const menuItems = document.querySelectorAll('.menu__item');
 const sections = document.querySelectorAll("main > section");
-const observer = new IntersectionObserver(observerHandler, {threshold: 0.1});
+const observer = new IntersectionObserver(observerHandler, {threshold: 0.01});
 function observerHandler(allSections) {
     allSections.map((section) => {
         let sectionClassName = section.target.className;
@@ -54,21 +54,21 @@ let resumeArray=[
     {id:19,title:"خرقه kherghe",img:"images/kherghe.webp",number:"140050140001093796",register:"425396",date:"1400/09/03",floor:[25]},
 ]
 const resumeWrapper=document.querySelector('#resume__wrapper')
-window.addEventListener('load',()=>{
-    resumeArray.forEach(resume=>{
-        resumeWrapper.insertAdjacentHTML('afterbegin',
-            `<div data-aos="zoom-in-down" class="col-span-1 xs:col-span-6 md:col-span-4 xl:col-span-3 flex flex-col items-center rounded-lg shadow p-4 bg-slate-600/60">
-                <img src="${resume.img}" alt="brand" class="w-16 h-16 rounded shadow-sm">
-                <h5 class="mt-3 font-estedadMedium text-sm md:text-lg">${resume.title}</h5>
-                <h6 class="mt-4 font-estedadMedium text-xs md:text-base">شماره اظهارنامه</h6>
-                <p class="text-2xs md:text-sm mt-2">${resume.number}</p>
-                <h6 class="mt-4 font-estedadMedium text-xs md:text-base">شماره ثبت</h6>
-                <p class="text-2xs md:text-sm mt-2">${resume.register}</p>
-                <h6 class="mt-4 font-estedadMedium text-xs md:text-base">تاریخ ثبت اظهارنامه</h6>
-                <p class="text-2xs md:text-sm mt-2">${resume.date}</p>
-                <h6 class="mt-4 font-estedadMedium text-xs md:text-base">طبقه/طبقات بین المللی</h6>
-                <p class="text-2xs md:text-sm mt-2">${resume.floor}</p>
-            </div>
-    `)
-    })
-})
+// window.addEventListener('load',()=>{
+//     resumeArray.forEach(resume=>{
+//         resumeWrapper.insertAdjacentHTML('afterbegin',
+//             `<div data-aos="zoom-in-down" class="col-span-1 xs:col-span-6 md:col-span-4 xl:col-span-3 flex flex-col items-center rounded-lg shadow p-4 bg-slate-600/60">
+//                 <img src="${resume.img}" alt="brand" class="w-16 h-16 rounded shadow-sm">
+//                 <h5 class="mt-3 font-estedadMedium text-sm md:text-lg">${resume.title}</h5>
+//                 <h6 class="mt-4 font-estedadMedium text-xs md:text-base">شماره اظهارنامه</h6>
+//                 <p class="text-2xs md:text-sm mt-2">${resume.number}</p>
+//                 <h6 class="mt-4 font-estedadMedium text-xs md:text-base">شماره ثبت</h6>
+//                 <p class="text-2xs md:text-sm mt-2">${resume.register}</p>
+//                 <h6 class="mt-4 font-estedadMedium text-xs md:text-base">تاریخ ثبت اظهارنامه</h6>
+//                 <p class="text-2xs md:text-sm mt-2">${resume.date}</p>
+//                 <h6 class="mt-4 font-estedadMedium text-xs md:text-base">طبقه/طبقات بین المللی</h6>
+//                 <p class="text-2xs md:text-sm mt-2">${resume.floor}</p>
+//             </div>
+//     `)
+//     })
+// })
