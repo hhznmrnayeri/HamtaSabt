@@ -29,6 +29,11 @@
 ::-webkit-scrollbar-thumb {
     @apply bg-gray-600 rounded
 }
+body{
+    /* background: rgb(45,45,45);
+    background: linear-gradient(94deg, rgba(45,45,45,1) 0%, rgba(111,110,124,1) 80%, rgba(66,66,75,1) 100%); */
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(90,92,106,1) 0%, rgba(32,45,58,1) 81.3% );
+}
 }
 @layer components{
     .section__title{
@@ -53,5 +58,29 @@
     }
     .contact{
         @apply mt-36
+    }
+    .banner1{
+        background: linear-gradient(270deg, rgba(0, 0, 0, 0.60) 33.85%, rgba(0, 0, 0, 0.746) 100%),url("../../public/images/section1.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .banner2{
+        background: linear-gradient(270deg, rgba(0, 0, 0, 0.60) 33.85%, rgba(0, 0, 0, 0.746) 100%),url("../../public/images/section2.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .banner3{
+        background: linear-gradient(270deg, rgba(0, 0, 0, 0.60) 33.85%, rgba(0, 0, 0, 0.746) 100%),url("../../public/images/section3.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .banner4{
+        background: linear-gradient(270deg, rgba(0, 0, 0, 0.60) 33.85%, rgba(0, 0, 0, 0.746) 100%),url("../../public/images/section4.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
     }
 }
